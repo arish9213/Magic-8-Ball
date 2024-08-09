@@ -21,7 +21,7 @@ responses = ["It is certain.",
              "My reply is no.",
              "My sources say no.",
              "Outlook not so good.",
-             "Very doubtful.”]
+             "Very doubtful.”"]
 
 #welcome statement for users
 print("Welcome to my M8B game! Start thinking of a yes or no question, but first... \n")
@@ -43,7 +43,7 @@ while True:
 
     #give user reponse message
     responses = random.choice(responses)
-    print(reponses)
+    print(responses)
 
      #declare variable for continuing play
     more_qs = input("Do you have another question? Yes/No: ")
@@ -59,7 +59,7 @@ while True:
     # set up no     
     elif more_qs == "No":
         print("Thanks for playing,", name, "Goodbye")
-        another_question == False
+        question == False
     
     # error messge
     else:
