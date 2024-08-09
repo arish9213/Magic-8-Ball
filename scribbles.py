@@ -14,6 +14,8 @@ another_question = True
 while another_question == True:
     responses = random.choice(responses)
     print(reponses)
+    
+    #declare variable for continuing play
     more_qs = input("Do you have another question? Yes/No: ")
 
     #set up if statment
@@ -22,5 +24,5 @@ while another_question == True:
         next_q = input(name, "Ask another question...")
         print(next_q)
     elif more_qs == "No":
-        print("Thanks for playing,", name, "Goodbye ")
+        print("Thanks for playing,", name, "Goodbye")
 
