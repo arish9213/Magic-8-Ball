@@ -49,7 +49,7 @@ while play:
     response = random.choice(responses)
     print("Response: It seems to me...",(response))
 
-    #Ask user if they have another question
+    #ask user if they have another question
     more_qs = input("Do you have another question? yes/no: \n")
 
     #if/elif/else loops
