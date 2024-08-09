@@ -32,9 +32,6 @@ name = input("What's your name?: ")
 #greet user
 print("Hello", name, " , Have you thought of your question yet? Times a ticking...")
 
-# set up variable for asking
-question == True
-
 #set up while loop
 while True:
     #ask and print out user question
@@ -59,7 +56,7 @@ while True:
     # set up no     
     elif more_qs == "No":
         print("Thanks for playing,", name, "Goodbye")
-        question == False
+        another_question == False
     
     # error messge
     else:
