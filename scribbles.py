@@ -14,15 +14,23 @@ another_question = True
 while another_question == True:
     responses = random.choice(responses)
     print(reponses)
-    
+
     #declare variable for continuing play
     more_qs = input("Do you have another question? Yes/No: ")
 
-    #set up if statment
+    #set up if/elif/else statments
+
+    # set up yes
     if more_qs == "Yes":
         #ask user for another question
         next_q = input(name, "Ask another question...")
         print(next_q)
+
+    # set up no     
     elif more_qs == "No":
         print("Thanks for playing,", name, "Goodbye")
-
+        another_question == False
+    
+    # error messge
+    else:
+        print("Sorry, I don't understand that, please try again.")
