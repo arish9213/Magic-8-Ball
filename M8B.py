@@ -23,6 +23,9 @@ responses = ["It is certain.",
              "Outlook not so good.",
              "Very doubtful.”"]
 
+#set variable for playing the game
+play = True
+
 #welcome statement for users
 print("✨🎱🔮 Welcome to my Magic 8 Ball game!🔮🎱✨ \n\n Start thinking of a yes or no question, but first... \n")
 
@@ -33,34 +36,28 @@ name = input("What is your name?: ")
 print("Hello",name," , Have you thought of your question yet? Time is ticking...\n")
 
 #set up while loop
-while True:
+while play == True:
 
     #ask and print out user question
     question = input("Ask your yes or no question:")
     print(name, "asks: ",question)
-    print("🎱🔮 *Shaking the ball * 🔮🎱       ...concentrate on your question!\n")
+    print("\n🎱🔮 *Shaking the ball * 🔮🎱    ...concentrate on your question!\n")
 
     #give user reponse message
     responses = random.choice(responses)
-    print("It seems to me...",(responses))
+    print("Response: It seems to me...",(responses))
 
-#declare variable for continuing play
-more_qs = input("Do you have another question? Yes/No: ")
+    #Ask user if they have another question
+    more_qs = input("Do you have another question? Yes/No: \n")
 
-#set up if/elif/else statments
+    #if/elif/else loops
+    if more_qs == "Yes":
+        play == True
 
-# set up yes
-if more_qs == "Yes":
-        
-    #ask user for another question
-    next_q = input(name, "Ask another question...")
-    print(next_q)
-
-# set up no     
-elif more_qs == "No":
-    print("Thanks for playing,", name, ". Have a magical day!")
-    another_question == False
+    elif more_qs == "No":
+        print("Thanks for playing,", name,".\n✨ Have a magical day! ✨")
+        play = False
     
-# error messge
-else:
-    print("Sorry, I don't understand that, please try again.")
+    # error messge
+    else:
+        print("\nSorry, I don't understand that, please try again.")
