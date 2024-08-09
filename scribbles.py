@@ -23,8 +23,6 @@ responses = ["It is certain.",
              "Outlook not so good.",
              "Very doubtful.”]
 
-# set up variable for asking
-question == True
 
 #welcome statement for users
 print("Welcome to my M8B game! Start thinking of a yes or no question, but first... \n")
@@ -35,8 +33,11 @@ name = input("What's your name?: ")
 #greet user
 print("Hello", name, " , Have you thought of your question yet? Times a ticking...")
 
+# set up variable for asking
+question == True
+
 #set up while loop
-while question == True:
+while True:
     #ask and print out user question
     question = input("Ask your yes or no question: ")
     print(name, "asks: ", question)
