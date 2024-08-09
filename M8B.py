@@ -41,6 +41,8 @@ while play:
     #ask and print out user question
     question = input("Ask your yes or no question:")
     print(name, "asks: ",question)
+
+    #let user know what is happening
     print("\n🎱🔮 *Shaking the ball * 🔮🎱    ...concentrate on your question!\n")
 
     #give user reponse message
