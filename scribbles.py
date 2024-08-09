@@ -17,8 +17,10 @@ while another_question == True:
     more_qs = input("Do you have another question? Yes/No: ")
 
     #set up if statment
-    if more_qs = "Yes":
+    if more_qs == "Yes":
         #ask user for another question
-        next_q = input("Ask another question...")
+        next_q = input(name, "Ask another question...")
         print(next_q)
+    elif more_qs == "No":
+        print("Thanks for playing,", name, "Goodbye ")
 
