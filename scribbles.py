@@ -24,24 +24,25 @@ responses = ["It is certain.",
              "Very doubtful.”"]
 
 #welcome statement for users
-print("Welcome to my magic 8 ball game! Start thinking of a yes or no question, but first... \n")
+print("✨🎱🔮 Welcome to my Magic 8 Ball game!🔮🎱✨ \n\n Start thinking of a yes or no question, but first... \n")
 
 #ask for users name
 name = input("What is your name?: ")
 
 #greet user
-print("Hello", name, " , Have you thought of your question yet? Time is ticking...")
+print("Hello",name," , Have you thought of your question yet? Time is ticking...\n")
 
 #set up while loop
 while True:
+
     #ask and print out user question
-    question = input("Ask your yes or no question: ")
-    print(name, "asks: ", question)
-    print("🎱🔮 *Shaking the ball * 🔮🎱\n ...concentrate on your question!")
+    question = input("Ask your yes or no question:")
+    print(name, "asks: ",question)
+    print("🎱🔮 *Shaking the ball * 🔮🎱       ...concentrate on your question!\n")
 
     #give user reponse message
     responses = random.choice(responses)
-    print("It seems to me... ",(responses))
+    print("It seems to me...",(responses))
 
 #declare variable for continuing play
 more_qs = input("Do you have another question? Yes/No: ")
