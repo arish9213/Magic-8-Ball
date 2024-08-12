@@ -21,7 +21,7 @@ responses = ["It is certain.",
              "My reply is no.",
              "My sources say no.",
              "Outlook not so good.",
-             "Very doubtful.”"]
+             "Very doubtful."]
 
 #set variable for playing the game
 play = True
